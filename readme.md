@@ -1,6 +1,6 @@
-# **BikeStores Data Engineering Project**
+# **End-to-End Data Engineering Pipeline Project**
 
-![Azure Data Pipeline](https://via.placeholder.com/800x400)
+
 
 ## **Table of Contents**
 - [Project Overview](#project-overview)
