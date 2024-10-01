@@ -12,9 +12,6 @@
 - [Visualization](#visualization)
 - [Machine Learning Models](#machine-learning-models)
 - [Folder Structure](#folder-structure)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
