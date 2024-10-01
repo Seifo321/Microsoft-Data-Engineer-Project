@@ -1,0 +1,9 @@
+{
+	"name": "adf-depi-proj",
+	"location": "francecentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ec2c798b-e0af-4d11-abc3-eca247dc780a",
+		"tenantId": "0bc92751-071a-4e2c-a48b-633206fef374"
+	}
+}
