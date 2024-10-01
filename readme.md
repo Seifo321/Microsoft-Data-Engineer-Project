@@ -25,7 +25,6 @@ Additionally, machine learning models are incorporated to provide **predictive a
 ## **Architecture**
 The architecture consists of several integrated Azure services for an efficient, scalable, and secure data pipeline.
 
-![Architecture Diagram](https://via.placeholder.com/800x400)
 
 - **Azure Data Factory (ADF)**: Manages ETL pipelines.
 - **Azure Synapse Analytics**: Acts as a data warehouse for storage and large-scale querying.
