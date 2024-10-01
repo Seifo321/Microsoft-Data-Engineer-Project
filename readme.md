@@ -16,7 +16,7 @@
 ---
 
 ## **Project Overview**
-This project aims to build an end-to-end data engineering pipeline designed to extract, transform, and load (ETL) data from multiple sources into a central data warehouse for analysis and insights. The project integrates with cloud-based solutions such as **Azure Data Factory** for orchestrating pipelines, **Azure Synapse Analytics** for data storage and querying, and **Power BI** for visualization.
+This project aims to build an end-to-end data engineering pipeline designed to extract, transform, and load (ETL) data into a central data warehouse for analysis and insights. The project integrates with cloud-based solutions such as **Azure Data Factory** for orchestrating pipelines, **Azure Synapse Analytics** for data storage and querying, and **Power BI** for visualization.
 
 Additionally, machine learning models are incorporated to provide **predictive analytics** and **forecasting** for improved decision-making.
 
