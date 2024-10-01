@@ -20,7 +20,7 @@
 ---
 
 ## **Project Overview**
-This project focuses on building an end-to-end data engineering pipeline for the **BikeStores** retail dataset. It extracts data from an SQL database using **Azure Data Factory**, transforms and loads it into **Azure Synapse Analytics** for analysis, and finally generates insights and forecasts through **Power BI** visualizations and predictive **machine learning models**.
+This project focuses on building an end-to-end data engineering pipeline for the **BikeStores** retail dataset. It extracts data from an SQL database using **Azure Data Factory**, processes and transforms it through **Azure Databricks**, and loads it into **Azure Synapse Analytics** for analysis, and finally generates insights and forecasts through **Power BI** visualizations and predictive **machine learning models**.
 
 The goal is to provide a high-performance, automated pipeline for effective data management and analysis, incorporating best practices for ETL processes, scalable infrastructure, and forecasting insights to support business decision-making.
 
