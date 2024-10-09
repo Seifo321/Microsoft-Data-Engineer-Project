@@ -8,8 +8,8 @@
 			"database": "BikeStores",
 			"encrypt": "mandatory",
 			"trustServerCertificate": true,
-			"authenticationType": "SQL",
-			"userName": "seifo",
+			"authenticationType": "Windows",
+			"userName": "XD\\lenovo",
 			"password": {
 				"type": "AzureKeyVaultSecret",
 				"store": {
