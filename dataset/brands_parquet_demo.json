@@ -1,0 +1,19 @@
+{
+	"name": "brands_parquet_demo",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "depiprojbronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
