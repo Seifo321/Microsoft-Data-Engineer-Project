@@ -1,5 +1,6 @@
 {
 	"name": "onpremisesqlserver",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
 		"annotations": [],
 		"type": "SqlServer",
@@ -10,14 +11,7 @@
 			"trustServerCertificate": true,
 			"authenticationType": "Windows",
 			"userName": "XD\\lenovo",
-			"password": {
-				"type": "AzureKeyVaultSecret",
-				"store": {
-					"referenceName": "AzureKeyVault1",
-					"type": "LinkedServiceReference"
-				},
-				"secretName": "password"
-			}
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1NjU0ZDdlMi0xYjM0LTQ2OWUtOGEyYi04ZTJmNWY5MDIzNTYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SHIR",
