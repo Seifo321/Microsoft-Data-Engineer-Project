@@ -91,10 +91,10 @@
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
-					"schemaname": {
+					"Schemaname": {
 						"type": "string"
 					},
-					"tablename": {
+					"Tablename": {
 						"type": "string"
 					}
 				},
@@ -104,11 +104,11 @@
 					"location": {
 						"type": "AzureBlobFSLocation",
 						"fileName": {
-							"value": "@{concat(dataset().tablename, '.parquet')}",
+							"value": "@{concat(dataset().Tablename, '.parquet')}",
 							"type": "Expression"
 						},
 						"folderPath": {
-							"value": "@{concat(dataset().schemaname, '/', dataset().tablename)}",
+							"value": "@{concat(dataset().Schemaname, '/', dataset().Tablename)}",
 							"type": "Expression"
 						},
 						"fileSystem": "depiprojbronze"
@@ -344,11 +344,11 @@
 											"referenceName": "ParquetTable",
 											"type": "DatasetReference",
 											"parameters": {
-												"schemaname": {
+												"Schemaname": {
 													"value": "@item().Schemaname\n",
 													"type": "Expression"
 												},
-												"tablename": {
+												"Tablename": {
 													"value": "@item().Tablename\n",
 													"type": "Expression"
 												}
