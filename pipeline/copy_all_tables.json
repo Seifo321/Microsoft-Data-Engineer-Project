@@ -98,11 +98,11 @@
 									"referenceName": "ParquetTable",
 									"type": "DatasetReference",
 									"parameters": {
-										"schemaname": {
+										"Schemaname": {
 											"value": "@item().Schemaname\n",
 											"type": "Expression"
 										},
-										"tablename": {
+										"Tablename": {
 											"value": "@item().Tablename\n",
 											"type": "Expression"
 										}
