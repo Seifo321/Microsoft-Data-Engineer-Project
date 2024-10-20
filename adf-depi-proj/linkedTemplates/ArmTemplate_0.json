@@ -174,7 +174,34 @@
 					},
 					"compressionCodec": "snappy"
 				},
-				"schema": []
+				"schema": [
+					{
+						"name": "product_id",
+						"type": "INT32"
+					},
+					{
+						"name": "product_name",
+						"type": "UTF8"
+					},
+					{
+						"name": "brand_id",
+						"type": "INT32"
+					},
+					{
+						"name": "category_id",
+						"type": "INT32"
+					},
+					{
+						"name": "model_year",
+						"type": "INT32"
+					},
+					{
+						"name": "list_price",
+						"type": "DECIMAL",
+						"precision": 10,
+						"scale": 2
+					}
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage2')]"
@@ -200,7 +227,16 @@
 					},
 					"compressionCodec": "snappy"
 				},
-				"schema": []
+				"schema": [
+					{
+						"name": "brand_id",
+						"type": "INT32"
+					},
+					{
+						"name": "brand_name",
+						"type": "UTF8"
+					}
+				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
