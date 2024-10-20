@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "adf-depi-proj"
 		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
