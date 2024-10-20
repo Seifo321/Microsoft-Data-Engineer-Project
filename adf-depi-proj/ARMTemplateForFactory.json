@@ -231,7 +231,7 @@
 						],
 						"outputs": [
 							{
-								"referenceName": "brands_parquet_demo",
+								"referenceName": "sales_stores_parquet",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -245,7 +245,7 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/SqlServerTable1')]",
-				"[concat(variables('factoryId'), '/datasets/brands_parquet_demo')]"
+				"[concat(variables('factoryId'), '/datasets/sales_stores_parquet')]"
 			]
 		},
 		{
@@ -283,67 +283,6 @@
 					"compressionCodec": "snappy"
 				},
 				"schema": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage2')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/ParquetTable_copy1')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "AzureDataLakeStorage2",
-					"type": "LinkedServiceReference"
-				},
-				"parameters": {
-					"Schemaname": {
-						"type": "string"
-					},
-					"Tablename": {
-						"type": "string"
-					}
-				},
-				"annotations": [],
-				"type": "Parquet",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobFSLocation",
-						"fileName": "products.parquet",
-						"folderPath": "production/products",
-						"fileSystem": "depiprojbronze"
-					},
-					"compressionCodec": "snappy"
-				},
-				"schema": [
-					{
-						"name": "product_id",
-						"type": "INT32"
-					},
-					{
-						"name": "product_name",
-						"type": "UTF8"
-					},
-					{
-						"name": "brand_id",
-						"type": "INT32"
-					},
-					{
-						"name": "category_id",
-						"type": "INT32"
-					},
-					{
-						"name": "model_year",
-						"type": "INT32"
-					},
-					{
-						"name": "list_price",
-						"type": "DECIMAL",
-						"precision": 10,
-						"scale": 2
-					}
-				]
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage2')]"
@@ -402,7 +341,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/brands_parquet_demo')]",
+			"name": "[concat(parameters('factoryName'), '/sales_orders_items_parquet')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -415,8 +354,78 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "brands.parquet",
-						"folderPath": "production/brands",
+						"fileName": "order_items.parquet",
+						"folderPath": "sales/order_items",
+						"fileSystem": "depiprojbronze"
+					},
+					"compressionCodec": "snappy"
+				},
+				"schema": [
+					{
+						"name": "brand_id",
+						"type": "INT32"
+					},
+					{
+						"name": "brand_name",
+						"type": "UTF8"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/sales_orders_parquet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureDataLakeStorage1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Parquet",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileName": "orders.parquet",
+						"folderPath": "sales/orders",
+						"fileSystem": "depiprojbronze"
+					},
+					"compressionCodec": "snappy"
+				},
+				"schema": [
+					{
+						"name": "brand_id",
+						"type": "INT32"
+					},
+					{
+						"name": "brand_name",
+						"type": "UTF8"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureDataLakeStorage1')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/sales_stores_parquet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureDataLakeStorage1",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Parquet",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileName": "stores.parquet",
+						"folderPath": "sales/stores",
 						"fileSystem": "depiprojbronze"
 					},
 					"compressionCodec": "snappy"
