@@ -18,12 +18,36 @@
 		},
 		"schema": [
 			{
-				"name": "brand_id",
+				"name": "order_id",
 				"type": "INT32"
 			},
 			{
-				"name": "brand_name",
-				"type": "UTF8"
+				"name": "customer_id",
+				"type": "INT32"
+			},
+			{
+				"name": "order_status",
+				"type": "INT32"
+			},
+			{
+				"name": "order_date",
+				"type": "DATE"
+			},
+			{
+				"name": "required_date",
+				"type": "DATE"
+			},
+			{
+				"name": "shipped_date",
+				"type": "DATE"
+			},
+			{
+				"name": "store_id",
+				"type": "INT32"
+			},
+			{
+				"name": "staff_id",
+				"type": "INT32"
 			}
 		]
 	}

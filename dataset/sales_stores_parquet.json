@@ -18,11 +18,35 @@
 		},
 		"schema": [
 			{
-				"name": "brand_id",
+				"name": "store_id",
 				"type": "INT32"
 			},
 			{
-				"name": "brand_name",
+				"name": "store_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "phone",
+				"type": "UTF8"
+			},
+			{
+				"name": "email",
+				"type": "UTF8"
+			},
+			{
+				"name": "street",
+				"type": "UTF8"
+			},
+			{
+				"name": "city",
+				"type": "UTF8"
+			},
+			{
+				"name": "state",
+				"type": "UTF8"
+			},
+			{
+				"name": "zip_code",
 				"type": "UTF8"
 			}
 		]
