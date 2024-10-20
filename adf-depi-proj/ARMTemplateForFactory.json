@@ -362,12 +362,32 @@
 				},
 				"schema": [
 					{
-						"name": "brand_id",
+						"name": "order_id",
 						"type": "INT32"
 					},
 					{
-						"name": "brand_name",
-						"type": "UTF8"
+						"name": "item_id",
+						"type": "INT32"
+					},
+					{
+						"name": "product_id",
+						"type": "INT32"
+					},
+					{
+						"name": "quantity",
+						"type": "INT32"
+					},
+					{
+						"name": "list_price",
+						"type": "DECIMAL",
+						"precision": 10,
+						"scale": 2
+					},
+					{
+						"name": "discount",
+						"type": "DECIMAL",
+						"precision": 4,
+						"scale": 2
 					}
 				]
 			},
@@ -397,12 +417,36 @@
 				},
 				"schema": [
 					{
-						"name": "brand_id",
+						"name": "order_id",
 						"type": "INT32"
 					},
 					{
-						"name": "brand_name",
-						"type": "UTF8"
+						"name": "customer_id",
+						"type": "INT32"
+					},
+					{
+						"name": "order_status",
+						"type": "INT32"
+					},
+					{
+						"name": "order_date",
+						"type": "DATE"
+					},
+					{
+						"name": "required_date",
+						"type": "DATE"
+					},
+					{
+						"name": "shipped_date",
+						"type": "DATE"
+					},
+					{
+						"name": "store_id",
+						"type": "INT32"
+					},
+					{
+						"name": "staff_id",
+						"type": "INT32"
 					}
 				]
 			},
@@ -432,11 +476,35 @@
 				},
 				"schema": [
 					{
-						"name": "brand_id",
+						"name": "store_id",
 						"type": "INT32"
 					},
 					{
-						"name": "brand_name",
+						"name": "store_name",
+						"type": "UTF8"
+					},
+					{
+						"name": "phone",
+						"type": "UTF8"
+					},
+					{
+						"name": "email",
+						"type": "UTF8"
+					},
+					{
+						"name": "street",
+						"type": "UTF8"
+					},
+					{
+						"name": "city",
+						"type": "UTF8"
+					},
+					{
+						"name": "state",
+						"type": "UTF8"
+					},
+					{
+						"name": "zip_code",
 						"type": "UTF8"
 					}
 				]
