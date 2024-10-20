@@ -40,6 +40,9 @@
 				},
 				{
 					"name": "select2"
+				},
+				{
+					"name": "sort1"
 				}
 			],
 			"scriptLines": [
@@ -98,7 +101,8 @@
 				"     ),",
 				"     skipDuplicateMapInputs: true,",
 				"     skipDuplicateMapOutputs: true) ~> select2",
-				"select2 sink(allowSchemaDrift: true,",
+				"select2 sort(desc({total purchases}, true)) ~> sort1",
+				"sort1 sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     partitionFileNames:['Output.csv'],",
 				"     skipDuplicateMapInputs: true,",
