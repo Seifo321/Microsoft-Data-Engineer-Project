@@ -1,5 +1,5 @@
 {
-	"name": "sales_stores_parquet",
+	"name": "sales_orders_items_parquet",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage1",
@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "stores.parquet",
-				"folderPath": "sales/stores",
+				"fileName": "order_items.parquet",
+				"folderPath": "sales/order_items",
 				"fileSystem": "depiprojbronze"
 			},
 			"compressionCodec": "snappy"

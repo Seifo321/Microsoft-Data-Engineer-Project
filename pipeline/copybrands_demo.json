@@ -47,7 +47,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "brands_parquet_demo",
+						"referenceName": "sales_stores_parquet",
 						"type": "DatasetReference"
 					}
 				]
