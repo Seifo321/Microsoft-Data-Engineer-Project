@@ -234,7 +234,10 @@
 				"annotations": [],
 				"type": "SqlServerTable",
 				"schema": [],
-				"typeProperties": {}
+				"typeProperties": {
+					"schema": "production",
+					"table": "brands"
+				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/onpremisesqlserver')]"
