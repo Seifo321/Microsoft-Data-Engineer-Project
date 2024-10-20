@@ -346,6 +346,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "brands.parquet",
+						"folderPath": "production/brands",
 						"fileSystem": "depiprojbronze"
 					},
 					"compressionCodec": "snappy"
