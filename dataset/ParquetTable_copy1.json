@@ -1,5 +1,5 @@
 {
-	"name": "ParquetTable",
+	"name": "ParquetTable_copy1",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureDataLakeStorage2",
@@ -18,14 +18,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@{concat(dataset().Tablename, '.parquet')}",
-					"type": "Expression"
-				},
-				"folderPath": {
-					"value": "@{concat(dataset().Schemaname, '/', dataset().Tablename)}",
-					"type": "Expression"
-				},
+				"fileName": "products.parquet",
+				"folderPath": "production/products",
 				"fileSystem": "depiprojbronze"
 			},
 			"compressionCodec": "snappy"
